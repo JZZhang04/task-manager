@@ -1,4 +1,4 @@
-# Eulerity Task Manager
+# Task Manager REST API
 
 A personal task manager REST API built with Java 17 and Spring Boot. The application supports task CRUD operations, an AI-powered task suggestion endpoint, an H2 in-memory database, a minimal browser-based frontend, and automated tests.
 
@@ -150,7 +150,7 @@ Request:
 curl -X POST http://localhost:8080/tasks \
   -H "Content-Type: application/json" \
   -d '{
-    "title": "Finish Eulerity take-home",
+    "title": "Finish take-home",
     "description": "Complete the API, frontend, tests, and README",
     "dueDate": "2026-05-25",
     "priority": "HIGH",
@@ -163,7 +163,7 @@ Example response:
 ```json
 {
   "id": 1,
-  "title": "Finish Eulerity take-home",
+  "title": "Finish take-home",
   "description": "Complete the API, frontend, tests, and README",
   "dueDate": "2026-05-25",
   "priority": "HIGH",
@@ -183,7 +183,7 @@ Example response:
 [
   {
     "id": 1,
-    "title": "Finish Eulerity take-home",
+    "title": "Finish take-home",
     "description": "Complete the API, frontend, tests, and README",
     "dueDate": "2026-05-25",
     "priority": "HIGH",
@@ -204,7 +204,7 @@ curl http://localhost:8080/tasks/1
 curl -X PUT http://localhost:8080/tasks/1 \
   -H "Content-Type: application/json" \
   -d '{
-    "title": "Finish Eulerity take-home",
+    "title": "Finish take-home",
     "description": "Complete the API, frontend, tests, and README",
     "dueDate": "2026-05-25",
     "priority": "HIGH",
@@ -217,7 +217,7 @@ Example response:
 ```json
 {
   "id": 1,
-  "title": "Finish Eulerity take-home",
+  "title": "Finish take-home",
   "description": "Complete the API, frontend, tests, and README",
   "dueDate": "2026-05-25",
   "priority": "HIGH",
@@ -277,7 +277,7 @@ The API key must have available API credits. Without a configured key, or withou
 curl -X POST http://localhost:8080/tasks/suggest \
   -H "Content-Type: application/json" \
   -d '{
-    "text": "High priority: submit my Eulerity take-home by 2026-05-23 and include the README."
+    "text": "High priority: submit my take-home by 2026-05-23 and include the README."
   }'
 ```
 
@@ -285,8 +285,8 @@ curl -X POST http://localhost:8080/tasks/suggest \
 
 ```json
 {
-  "title": "Submit Eulerity take-home",
-  "description": "Submit the Eulerity take-home project with the README included.",
+  "title": "Submit take-home",
+  "description": "Submit the take-home project with the README included.",
   "dueDate": "2026-05-23",
   "priority": "HIGH",
   "status": "TODO"
