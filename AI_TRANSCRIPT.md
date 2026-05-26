@@ -8,6 +8,4 @@ The conversation below includes architecture decisions, code generation, impleme
 ---
 
 ## Share Link: 
-https://chatgpt.com/share/6a0feace-1324-83ea-bbf2-05456d6e17a9
-
-
+The AI development transcript was submitted separately through Greenhouse as part of the application materials and is intentionally not included in this public repository.
